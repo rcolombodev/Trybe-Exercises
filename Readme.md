@@ -5,6 +5,7 @@ TRYBE EXERCISES
 
 -Fundamentos do Desenvolvimento Web-
 -Bloco 1: Unix, Bash e Shell Script
+
 |_
   \ 1.3 - Fundamentos do Desenvolvimento Web
    \1.3 - Introdução - Unix & Shell
@@ -12,12 +13,14 @@ TRYBE EXERCISES
      \1.4 - Unix & Bash - Parte 2
 
 -Bloco 2: Git, GitHub e Internet
+
 |_
   \2.1 - Git & GitHub - O que é e para que serve
    \2.2 - Git & GitHub - Entendendo os comandos
     \2.3 - Internet - Entendendo como ela funciona
 
 -Bloco 3: Introdução à HTML e CSS
+
 |_
   \3.1 - Introdução - HTML & CSS
    \3.1 - HTML & CSS - Estruturas de página
@@ -26,6 +29,7 @@ TRYBE EXERCISES
       \3.4 - HTML Semântico
        
 -Bloco 4: Introdução à JavaScript e Lógica de Programação
+
 |_
   \4.1 - Introdução - JavaScript
    \4.1 - JavaScript - Primeiros passos

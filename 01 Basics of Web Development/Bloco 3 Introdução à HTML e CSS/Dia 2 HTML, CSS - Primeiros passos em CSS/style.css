@@ -1,0 +1,36 @@
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+li{
+    background-color: chocolate;
+}
+.texttag{
+    background-color: rgb(184, 99, 84);
+}
+body{
+    font-size: 16px;
+    font-style: normal;
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+}
+ul{
+    font-style: bold;
+    line-height: 40px;
+    font-size: 2em;
+    text-align: left;
+    text-decoration: underline rgb(10, 20, 37);
+}
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom {
+    background-color: brown;
+}

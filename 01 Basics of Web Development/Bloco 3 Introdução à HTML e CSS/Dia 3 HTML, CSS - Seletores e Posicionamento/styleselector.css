@@ -1,0 +1,18 @@
+
+h1, p {
+    text-align: center;
+    
+}
+
+li:hover {
+    background-color: chocolate;
+    transition: 1s;
+}
+
+li:active {
+    color: aliceblue;
+}
+
+.lista {
+    list-style: none
+}

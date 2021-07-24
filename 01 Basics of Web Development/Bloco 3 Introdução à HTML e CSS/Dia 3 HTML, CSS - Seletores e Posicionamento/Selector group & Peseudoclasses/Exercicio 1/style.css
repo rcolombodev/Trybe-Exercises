@@ -1,0 +1,18 @@
+
+h1, p {
+    text-align: center;
+}
+
+ol:hover,ul:hover {
+    background-color: chocolate;
+    transition: 1s;
+}
+
+li:active {
+    color: aliceblue;
+    font-family: monospace;
+}
+
+li {
+    list-style: none
+}

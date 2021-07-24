@@ -33,3 +33,27 @@ li em{
 .pink-background {
     background-color: pink;
 }
+
+.link-effect li a:hover {
+    font-weight: 700;
+}
+
+.link-effect li a[href*="stackoverflow"] {
+    color: orange;
+}
+
+.link-effect li a[href*="W3Schools"] {
+    color: green;
+}
+
+.link-effect li a[href*="MDN Web Docs"] {
+    color: black;
+}
+
+.link-effect li a[href*="DevDocs"] {
+    color: yellow;
+}
+
+.link-effect li a[href*="Trybe"] {
+    color: green
+}

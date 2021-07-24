@@ -9,3 +9,27 @@ ol li:nth-child(odd) {
 ol li:nth-child(even) {
     color: green;
 }
+
+h1, h2, h3{
+    color: red;
+}
+h1 em, h2 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em{
+    font-weight: 700;
+}
+
+.programacao li:not(:nth-child(n + 4)) {
+    color:blue;
+}
+
+.pink-background {
+    background-color: pink;
+}

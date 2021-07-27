@@ -1,0 +1,358 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a{
+    color: #fff;
+    
+}
+
+body {
+     background-image: url(./Imagens/deepocean.jpg);
+     position:absolute;
+     background-attachment: fixed;
+     font-family: 'Fira Sans', sans-serif;
+     color: #fff;
+     margin: 0;
+     padding: 0;
+     vertical-align: baseline;
+
+}
+
+.menu {
+    background-color: rgba(22, 24, 29, 0.555);
+    border: 1px solid rgb(0, 0, 0);
+    margin: auto;
+}
+
+.menu ul li {
+    background-color: rgb(60, 81, 175);
+    display: inline-block;
+    position: relative;
+    width: 10%;
+    height: 25px;
+    text-align: center;
+    left: 34.6%;
+    font-size: 18px;
+    font-weight: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.199)
+}
+
+.titulo {
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: monospace;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    border: 10px solid rgb(1, 74, 122)
+}
+
+.history {
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    font-size: 15px;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: -200px;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+}
+
+.history h1 {
+    font-family: monospace;
+    font-weight: 800;
+    padding-bottom: 1%;
+}
+
+.history h2 {
+    width: 40%;
+    position: relative;
+    left: 10%;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(1, 175, 255);
+}
+
+
+
+.history p {
+    width: 40%;
+    position: relative;
+    left: 10%;
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+
+.history img {
+    position: relative;
+    left: 22%;
+    bottom: 395px;
+}
+
+.artigo {
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    font-size: 15px;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: -200px;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    bottom: 350px;
+  
+}
+
+.artigo h2 {
+    font-family: monospace;
+    font-weight: 800;
+    padding-bottom: 1%;
+    font-size: 30px;
+}
+
+.artigo h3 {
+    width: 40%;
+    position: relative;
+    left: 50%;
+    font-size: 100px;
+    font-weight: 400;
+    color: rgb(1, 175, 255);
+    top: 30px;
+    border: 4px rgb(187, 187, 187) solid;
+}
+
+.artigo p {
+    width: 40%;
+    position: relative;
+    left: 50%;
+    font-size: 17px;
+    font-weight: 400;
+    top: 50px;
+    
+}
+
+.artigo img {
+    position: relative;
+    right: 22%;
+    bottom: 290px;
+}
+
+.team {
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: -200px;
+    display: inline-block;
+    position: relative;
+    bottom: 282px;
+   
+}
+
+.team h2 {
+    font-family: monospace;
+    font-weight: 800;
+    padding-bottom: 1%;
+    font-size: 30px;
+}
+
+.team h3 {
+    width: 40%;
+    position: relative;
+    left: 8%;
+    font-size: 60px;
+    font-weight: 400;
+    color: rgb(1, 175, 255);
+    top: 85px;
+    border: 4px rgb(187, 187, 187) solid;
+}
+
+.team p {
+    width: 40%;
+    position: relative;
+    left: 8%;
+    font-size: 17px;
+    font-weight: 400;
+    top: 110px;
+}
+
+.team img {
+    position: relative;
+    left: 22%;
+    bottom: 220px;
+}
+
+.vision {
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: -200px;
+    display: inline-block;
+    position: relative;
+    bottom: 473px;
+}
+
+.vision h2 {
+    font-family: monospace;
+    font-weight: 800;
+    padding-bottom: 1%;
+    font-size: 30px;
+}
+
+.vision h3 {
+    width: 40%;
+    position: relative;
+    left: 52%;
+    font-size: 60px;
+    font-weight: 400;
+    color: rgb(1, 175, 255);
+    top: 55px;
+    border: 4px rgb(187, 187, 187) solid;
+}
+
+.vision p {
+    width: 41%;
+    position: relative;
+    left: 52%;
+    font-size: 17px;
+    font-weight: 400;
+    top: 70px;
+}
+
+.vision img {
+    position: relative;
+    right: 24%;
+    bottom: 300px;
+}
+
+.table {
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    font-size: 15px;
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: -200px;
+    display: inline-block;
+    position: relative;
+    bottom: 1035px;
+    left: 191px;
+    border: rgb(1, 74, 122) solid 8px;
+    border-right: 0; 
+}
+
+.table td, h3 {
+    text-align: center;
+    left: 1px;
+    top: 50px;
+    width: 200px;
+}
+
+.table h3 {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 20px;
+    margin: auto;
+    position: relative;
+    top: 8px;
+}
+
+.table td {
+    font-weight: 400;
+    top: 20px;
+    position: relative;
+    font-size: 17px;
+}
+
+.youtube {
+    background-color: rgba(0, 0, 0, 0.603);
+    text-align: center;
+    font-size: 15px;
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    bottom: 1067px;
+    left: 187px;
+    border: rgb(1, 74, 122) solid 8px;
+}
+
+.youtube h2 {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    color: chocolate;
+}
+
+.youtube h2 a{
+    color: rgb(123, 255, 0);
+}
+
+.fonts {
+    text-align: center;
+    font-size: 15px;
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+    position: relative;
+    bottom: 1300px;
+    left: 1143px;
+}
+
+.fonts h3 {
+    font-size: 15px;
+    width: 30%;
+    height: 200px;
+    display: block;
+    position: relative;
+    top: 130px;
+    left: 100px;
+    color: rgb(255, 145, 0);
+    font-size: 19px;
+}
+
+.fonts ul li {
+    position: relative;
+    bottom: 75px;
+    left: 110px;
+    font-size: 18px;
+}
+
+.fonts a {
+    color: darkorange;    
+}
+
+.rodape {
+    position: relative;
+    bottom: 1350px;
+    left: 62%;
+    font-size: 18px;
+    margin: 0;
+    width: 35%;
+}

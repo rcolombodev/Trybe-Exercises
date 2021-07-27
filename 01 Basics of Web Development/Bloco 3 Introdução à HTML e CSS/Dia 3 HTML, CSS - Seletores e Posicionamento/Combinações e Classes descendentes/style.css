@@ -38,22 +38,22 @@ li em{
     font-weight: 700;
 }
 
-.link-effect li a[href*="Stackoverflow"] {
+.link-effect li a[href*="stackoverflow"] {
     color: orange;
 }
 
-.link-effect li a[href*="W3Schools"] {
+.link-effect li a[href*="w3schools"] {
     color: green;
 }
 
-.link-effect li a[href*="MDN Web Docs"] {
+.link-effect li a[href*="mozilla"] {
     color: black;
 }
 
-.link-effect li a[href*="DevDocs"] {
+.link-effect li a[href*="devdocs"] {
     color: yellow;
 }
 
-.link-effect li a[href*="Trybe"] {
+.link-effect li a[href*="trybe"] {
     color: green;
 }

@@ -12,15 +12,10 @@ a{
 }
 
 body {
-     background-image: url(./Imagens/deepocean.jpg);
-     position:absolute;
+     background-image: url(./Imagens/deepocean.jpg); 
      background-attachment: fixed;
      font-family: 'Fira Sans', sans-serif;
      color: #fff;
-     margin: 0;
-     padding: 0;
-     vertical-align: baseline;
-
 }
 
 .menu {

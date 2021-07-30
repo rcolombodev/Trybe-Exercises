@@ -42,7 +42,7 @@ for (let index = 0; index < numbers3.length; index+=1) {
   if(index < numbers3.length - 1){
     numbers4.push(numbers3[index] * numbers3[index + 1]);
   }else{
-    numbers4.push(numbers[index] * 2);
+    numbers4.push(numbers3[index] * 2);
   }
 }
 console.log(numbers4)

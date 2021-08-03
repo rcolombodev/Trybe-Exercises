@@ -17,7 +17,7 @@ console.log(verificaPalindrome('Desenvolvimento'))
 // Valor esperado no retorno da função: 4 .
 
 function indiceDoMaior(numeros){
-  let indiceMaior =0;
+  let indiceMaior = 0;
     for(let index in numeros){
       if(numeros[indiceMaior] < numeros[index]){
       indiceMaior = index
@@ -63,6 +63,27 @@ console.log(maiorString(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana
 // Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
 // Valor esperado no retorno da função: 2 .
 
+function maisRepetem(numeros) {
+let contadorNumeros = 0;
+let contadorRepetidos = 0;
+let armazenaRepetido = 0;
+    for(let index in numeros){
+      let verifica = numeros[index]
+        for(let index2 in numeros){
+          if(verifica === numeros[index2]){
+              contadorNumeros += 1; 
+        }
+      }
+      if(contadorNumeros > contadorRepetidos) {
+          contadorRepetidos = contadorNumeros;
+            armazenaRepetido = index
+      }
+      contadorNumeros = 0;
+    }
+    return numeros[armazenaRepetido]
+}
+
+console.log(maisRepetem([2, 3, 2, 5, 8, 2, 3]))
 
 //6 - Crie uma função que receba um número inteiro N e retorne o somatório de todos os números de 1 até N.
 // Valor de teste: N = 5 .
@@ -84,3 +105,5 @@ console.log(somaTudo(5))
 // Retorno esperado: true
 // verificaFimPalavra('joaofernando', 'fernan') ;
 // Retorno esperado: false
+
+

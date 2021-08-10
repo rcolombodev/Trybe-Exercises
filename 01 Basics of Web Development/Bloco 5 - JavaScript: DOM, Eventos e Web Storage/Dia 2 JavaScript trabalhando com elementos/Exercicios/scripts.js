@@ -67,6 +67,9 @@ for (let index = 0; index < 3; index += 1) {
     h3Description[index].className = 'description';
 }
 
+let sectionLeftContent = document.getElementsByClassName('left-content')[0];
+main.removeChild(sectionLeftContent);
+
 let sectionRightCenter = document.getElementsByClassName('right-content')[0];
 sectionRightCenter.style.marginRight = 'auto';
 

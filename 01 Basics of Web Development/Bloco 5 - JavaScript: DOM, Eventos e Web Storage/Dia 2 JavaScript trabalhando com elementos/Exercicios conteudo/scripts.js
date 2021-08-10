@@ -48,7 +48,7 @@ let filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
 filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
 primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
 
-// document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling
+document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling
 
 // // Parte 3
 

@@ -28,10 +28,10 @@ document.getElementById('pai').lastElementChild.previousElementSibling;
 
 // // Parte 2
 
-// // Crie um irmão para elementoOndeVoceEsta .
-// // Crie um filho para elementoOndeVoceEsta .
-// // Crie um filho para primeiroFilhoDoFilho .
-// // A partir desse filho criado, acesse terceiroFilho .
+// // // Crie um irmão para elementoOndeVoceEsta .
+// // // Crie um filho para elementoOndeVoceEsta .
+// // // Crie um filho para primeiroFilhoDoFilho .
+// // // A partir desse filho criado, acesse terceiroFilho .
 
 let pai = document.getElementById('pai');
 let irmaoElementoOndeVoceEsta = document.createElement('section');
@@ -48,11 +48,11 @@ let filhoDoPrimeiroFilhoDoFilho = document.createElement('section');
 filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
 primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
 
-document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling
+// document.getElementById('filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling
 
-// Parte 3
+// // Parte 3
 
-// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+// // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
 
 for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
   let currentChildren = pai.childNodes[index];

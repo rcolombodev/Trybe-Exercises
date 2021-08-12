@@ -23,7 +23,6 @@ function addingDays(){
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   const ulList = document.getElementById('days');
   
-  
   for(let index in dezDaysList){
     const list = document.createElement('li')
     const day = dezDaysList[index];   
@@ -112,7 +111,7 @@ function clickFridayEvent(){
   const getButtonFriday = document.querySelector('#btn-friday');
   const getFriday = document.querySelectorAll('.friday');
   const newText = 'É SEXTAA!!!'
-  let fridays = [4, 11, 28, 25]
+  const fridays = [4, 11, 28, 25]
 
   getButtonFriday.addEventListener('click', function() {
     for(let index in getFriday) {
@@ -200,14 +199,25 @@ myTasks.addEventListener('click', function(event){
 
 selectTask();
 
-// Exercício 10
+// Exercício 10 >>>>>>>>>>> Exercicio Gabaritado <<<<<<<<<< NOTA: Não consegui resolver e copiei do conteudo didatico com o proposito de entender o raciocínio lógico a partir da linha 213.
 // Implemente uma função que adiciona um evento que ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
 // Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
 
 function setDayColor(){
-  const days = document.getElementById('days')
-  const selectedTask = document.querySelectorAll('.task selected');
-  const taskColor = document.querySelector('.task')
+  let days = document.getElementById('days')
+  let selectedTask = document.getElementsByClassName('task selected');
+  let taskDiv = document.querySelector('.task')
+  let taskColor = taskDiv.style.backgroundColor;                         
   
-  // ?????
-}
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  }); 
+};
+
+setDayColor();

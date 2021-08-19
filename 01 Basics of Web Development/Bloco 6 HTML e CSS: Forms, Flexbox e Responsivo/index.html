@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" method="get">
+    <fieldset class="form">
+      <legend>
+        <h1>Formulário</h1>
+      </legend>
+      <div class="dados">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" maxlength="40" required>
+      </div>
+      <div class="dados">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" maxlength="50" required>
+      </div>
+      <div class="dados">
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+      </div>
+      <div class="dados">
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" maxlength="200" required>
+      </div>
+      <div class="dados">
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" id="cidade" maxlength="28" required>
+      </div>
+      <div class="dados">
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+          <option value="selecione">Selecione</option>
+        </select>
+      </div>
+      <fieldset class="home">
+        <legend>Residencia</legend>
+        <div class="dados">
+          <label for="casa">Casa</label>
+          <input type="radio" name="tipo" id="casa" required>
+          <label for="apto">Apto</label>
+          <input type="radio" name="tipo" id="apto" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="emprego">
+        <legend>
+          <h2>Dados do seu ultimo emprego</h2>
+        </legend>
+        <div class="dados">
+          <label for="curriculo">Resumo do currículo</label>
+          <br>
+          <textarea name="" id="curriculo" cols="30" rows="5" maxlength="1000"required></textarea>
+        </div>
+        <div class="dados">
+          <label for="cargo">Cargo</label>
+          <br>
+          <input type="text" name="" id="cargo" maxlength="40"required>
+        </div>
+        <div class="dados">
+          <label for="desc-cargo">Descrição do cargo</label>
+          <br>
+          <input type="text" name="" id="desc-cargo" maxlength="500"required>
+        </div>        
+        <div class="dados">
+          <label for="data">Data de início</label>
+          <br>
+          <input type="text" name="" id="data" placeholder="dd/mm/aaaa"required>
+        </div>
+        <br>
+        <div></div>
+      </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

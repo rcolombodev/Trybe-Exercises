@@ -221,3 +221,24 @@ function setDayColor(){
 };
 
 setDayColor();
+
+
+
+function cleaningBoard() {
+  const pixels = document.getElementsByClassName('pixels');
+  for (const pixel of pixels) {
+    pixel.style.backgroundColor = '';
+  }
+}
+
+document.getElementById('clear-board');
+  document.addEventListener('click', cleaningBoard);
+
+
+  function selectedColor(colorPalette) {
+    if(colorPalette.length === 0) {
+     colorPalette.classList.add('selected');
+    } else {
+      colorPalette.classList.remove('selected');
+    }
+   }

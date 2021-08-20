@@ -28,43 +28,43 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ### Bloco 3: Introdução - HTML & CSS
 
-:black_large_square: 3-1: _HTML & CSS - Estruturas de página_
+:ballot_box_with_check: 3-1: _HTML & CSS - Estruturas de página_
 
-:black_large_square: 3-2: _HTML & CSS - Primeiros passos em CSS_
+:ballot_box_with_check: 3-2: _HTML & CSS - Primeiros passos em CSS_
 
-:black_large_square: 3-3: _HTML & CSS - Seletores e posicionamento_
+:ballot_box_with_check: 3-3: _HTML & CSS - Seletores e posicionamento_
 
-:black_large_square: 3-4: _HTML Semântico_
+:ballot_box_with_check: 3-4: _HTML Semântico_
 
-:black_large_square: 3-5: _Projeto - Lesson Learned_
+:ballot_box_with_check: 3-5: _Projeto - Lesson Learned_
   
 
 ### Bloco 4: Introdução - JavaScript e Lógica
 
-:black_large_square:  4-1: _JavaScript - Primeiros passos_
+:ballot_box_with_check:  4-1: _JavaScript - Primeiros passos_
 
-:black_large_square: 4-2: _JavaScript - Array e loop For_
+:ballot_box_with_check: 4-2: _JavaScript - Array e loop For_
 
-:black_large_square: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+:ballot_box_with_check: 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 
-:black_large_square: 4-4: _JavaScript - Objetos e funções_
+:ballot_box_with_check: 4-4: _JavaScript - Objetos e funções_
 
-:black_large_square: 4-5: _Projeto - Playground Functions_
+:ballot_box_with_check: 4-5: _Projeto - Playground Functions_
 
   
 ### Bloco 5: Javascript: DOM, Eventos e Web Storage
 
-:black_large_square: 5-1: _JavaScript - DOM e seletores_
+:ballot_box_with_check: 5-1: _JavaScript - DOM e seletores_
 
-:black_large_square: 5-2: _JavaScript - Trabalhando com elementos_
+:ballot_box_with_check: 5-2: _JavaScript - Trabalhando com elementos_
 
-:black_large_square: 5-3: _JavaScript - Eventos_
+:ballot_box_with_check: 5-3: _JavaScript - Eventos_
 
-:black_large_square:  5-4: _JavaScript - Web Storage_
+:ballot_box_with_check:  5-4: _JavaScript - Web Storage_
 
-:black_large_square: 5.5: _Projeto: Arte com Pixels_
+:ballot_box_with_check: 5.5: _Projeto: Arte com Pixels_
 
-:black_large_square: 5-6: _Projeto - Lista de tarefas_
+:ballot_box_with_check: 5-6: _Projeto - Lista de tarefas_
 
 :black_large_square: 5-7: _Projeto Bônus - Meme Generator_
 
@@ -75,9 +75,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ### Bloco 6: HTML & CSS avançado
 
-:black_large_square: 6-1: _HTML & CSS - Forms_
+:ballot_box_with_check: 6-1: _HTML & CSS - Forms_
 
-:black_large_square: 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+:ballot_box_with_check: 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 
 :black_large_square: 6-3: _CSS Flexbox - Part 1_
 

@@ -12,57 +12,57 @@
 </head>
 
 <body class="container">
-  <form action="" method="get">
+  <form action="" method="get" class="js-form">
     <h1 class="h1 text-center">Formulário</h1>
     <div class="mb-3">
       <label class="form-label" for="nome">Nome:</label>
-      <input class="form-control"type="text" name="nome" id="nome" maxlength="40" required>
+      <input class="form-control"type="text" name="nome" id="nome" maxlength="40" data-validate-field="name">
     </div>
     <div class="mb-3">
       <label class="form-label"  for="email">E-mail:</label>
-      <input class="form-control"type="email" name="email" id="email" maxlength="50" required>
+      <input class="form-control"type="email" name="email" id="email" maxlength="50" data-validate-field="email">
     </div>
     <div class="mb-3">
       <label class="form-label" for="cpf">CPF:</label>
-      <input class="form-control"type="text" name="cpf" id="cpf" maxlength="11" required>
+      <input class="form-control"type="text" name="cpf" id="cpf" maxlength="11" data-validate-field="cpf">
     </div>
     <div class="mb-3">
       <label class="form-label" for="endereco">Endereço:</label>
-      <input class="form-control"type="text" name="endereco" id="endereco" maxlength="200" required>
+      <input class="form-control"type="text" name="endereco" id="endereco" maxlength="200" data-validate-field="address">
     </div>
     <div class="mb-3">
       <label class="form-label" for="cidade">Cidade:</label>
-      <input class="form-control"type="text" name="cidade" id="cidade" maxlength="28" required>
+      <input class="form-control"type="text" name="cidade" id="cidade" maxlength="28" data-validate-field="city">
     </div>
     <div class="mb-3">
       <label class="form-label" for="estado">Estado:</label>
-      <select class="form-select form-select-lg mb-3" name="estado" id="estado">
+      <select class="form-select form-select-lg mb-3" name="estado" id="estado"data-validate-field="state">
         <option value="selecione">Selecione</option>
       </select>
     </div>
     <div class="mb-3">
+      <input type="radio" name="tipo" id="casa" data-validate-field="radio">
       <label class="form-label" for="casa">Casa</label>
-      <input type="radio" name="tipo" id="casa" required>
+      <input type="radio" name="tipo" id="apto" data-validate-field="radio">
       <label class="form-label" for="apto">Apto</label>
-      <input type="radio" name="tipo" id="apto" required>
     </div>
     <h2 class="h2 text-center">Dados do seu ultimo emprego</h2>
     <div class="mb-3 form-floating">
-      <textarea class="form-control" name="" id="curriculo" cols="30" rows="5" maxlength="1000" required></textarea>
+      <textarea class="form-control" name="" id="curriculo" cols="30" rows="5" maxlength="1000" data-validate-field="curriculo"></textarea>
       <label for="curriculo">Resumo do currículo</label>
     </div>
     <div class="mb-3">
       <label class="form-label" for="cargo">Cargo</label>
-      <input class="form-control"type="text" name="" id="cargo" maxlength="40" required>
+      <input class="form-control"type="text" name="" id="cargo" maxlength="40" data-validate-field="cargo">
     </div>
     <div class="mb-3">
       <label class="form-label" for="desc-cargo">Descrição do cargo</label>
-      <input class="form-control"type="text" name="" id="desc-cargo" maxlength="500" required>
+      <input class="form-control"type="text" name="" id="desc-cargo" maxlength="500" data-validate-field="description">
     </div>
     <div class="mb-3">
       <label class="form-label" for="data">Data de início</label>
       <br>
-      <input class="form-control"type="text" name="" id="datepicker" placeholder="dd/mm/aaaa" required>
+      <input class="form-control"type="text" name="" id="datepicker" placeholder="dd/mm/aaaa" data-validate-field="date">
     </div>
     <div>
     <button class="btn btn-success" type="submit">Enviar</button>
@@ -71,7 +71,7 @@
   </form>
   <script src="node_modules/moment/moment.js"></script>
   <script src="node_modules/pikaday/pikaday.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 
 </html>

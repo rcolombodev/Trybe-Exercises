@@ -98,6 +98,9 @@ function pagedata() {
         required: 'O campo de nome é obrigatório.',
         maxLength: 'O limite é de 40 caracteres.'
       },
+      email: {
+        required: 'O campo de e-mail é obrigatório.'
+      },
       cpf: {
         required: 'O campo de CPF é obrigatório.',
         maxLength: 'O limite é de 11 caracteres.'

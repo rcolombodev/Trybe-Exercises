@@ -134,3 +134,47 @@ html {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  body {
+    margin: 0 10%;
+  }
+
+  header nav ul li:nth-of-type(2) {
+    padding: 0 15px 0 15px
+  }
+
+  header nav ul li {  
+    font-size: 2em;
+    margin-top: 15px; 
+    margin-left: 10px; 
+  }
+
+  header p {
+    font-size: 2.8em;
+  }
+
+  aside {
+    font-size: 1.3em;
+  }
+
+  .main-content h1 {
+    font-size: 2.1em;
+    margin-top: 3%;
+    letter-spacing: 5px;
+  }
+
+  .main-content p {
+    font-size: 1.6em;
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: justify;
+  }
+
+  footer {
+    font-size: 1.3em;
+  }
+
+  footer h3 {
+    font-size: 1.4em;
+  }
+}

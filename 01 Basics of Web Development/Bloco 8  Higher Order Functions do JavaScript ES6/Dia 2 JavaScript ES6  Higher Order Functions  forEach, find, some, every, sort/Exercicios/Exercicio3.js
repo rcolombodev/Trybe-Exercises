@@ -75,11 +75,7 @@ const expectedResult = {
 };
 
 //3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
-function getNamedBook() {
-  
-  return books.find(book => book.name.length === 26)
-
-}
+const getNamedBook = () => books.find(book => book.name.length === 26)
 
 //console.log(getNamedBook())
 assert.deepStrictEqual(getNamedBook(), expectedResult);

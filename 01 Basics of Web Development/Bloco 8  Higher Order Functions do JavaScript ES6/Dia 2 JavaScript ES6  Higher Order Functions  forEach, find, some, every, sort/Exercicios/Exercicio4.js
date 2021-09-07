@@ -111,9 +111,8 @@ const expectedResult = [
   },
 ];
 
-function booksOrderedByReleaseYearDesc() {
-  return books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear)
-}
+const booksOrderedByReleaseYearDesc = () => books.sort((bookA, bookB) => bookB.releaseYear - bookA.releaseYear)
+
 
 //console.log(booksOrderedByReleaseYearDesc())
 assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult);

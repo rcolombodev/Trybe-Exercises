@@ -65,6 +65,8 @@ const books = [
 
 const expectedResult = false;
 
+
+//copiado do gabarito para maior entendimento
 const authorUnique = () => books.every((book) =>
     !books.some((bookSome) =>
       (bookSome.author.birthYear === book.author.birthYear) &&

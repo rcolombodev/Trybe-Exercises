@@ -1,0 +1,18 @@
+{
+  "name": "Dia-2-Jest-Testes-Assincronos",
+  "version": "1.0.0",
+  "main": "TesteConteudo.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.2.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.5"
+  },
+  "description": ""
+}

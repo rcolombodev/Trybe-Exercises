@@ -1,0 +1,1 @@
+Exercicios sobre seletores de grupos e pseudo seletores.

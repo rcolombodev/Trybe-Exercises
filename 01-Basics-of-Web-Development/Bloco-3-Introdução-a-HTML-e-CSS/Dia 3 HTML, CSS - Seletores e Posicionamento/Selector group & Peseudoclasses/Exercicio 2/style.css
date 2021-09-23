@@ -1,0 +1,51 @@
+div:hover {
+    color: darksalmon;
+}
+
+div:nth-of-type(1) {
+    background-color: blue;
+}
+
+div:nth-of-type(2) {
+    background-color: green;
+}
+
+div:nth-of-type(3) {
+    background-color: orange;
+}
+
+div:nth-of-type(4) {
+    background-color: purple;
+}
+
+div:nth-of-type(5) {
+    background-color: turquoise;
+}
+
+h3:nth-of-type(1) {
+    font-size: 25px;
+}
+
+h3:nth-of-type(2) {
+    font-family: fantasy;
+}
+
+h3:nth-of-type(3) {
+    border: 1px;
+}
+
+h3:nth-of-type(4) {
+    font-weight: 16px;
+}
+
+h3:nth-of-type(5) {
+    color: white;
+}
+
+div:nth-of-type(3) {
+    height: 80px;
+}
+
+div:nth-child(odd) {
+    font-style: italic;
+}

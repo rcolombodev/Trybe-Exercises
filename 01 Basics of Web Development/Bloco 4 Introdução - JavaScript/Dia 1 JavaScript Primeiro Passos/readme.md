@@ -1,1 +1,0 @@
-Bloco 4, Dia 1;

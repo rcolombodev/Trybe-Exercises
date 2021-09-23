@@ -1,1 +1,0 @@
-Denominação 3.1 (bloco 3, dia 1)

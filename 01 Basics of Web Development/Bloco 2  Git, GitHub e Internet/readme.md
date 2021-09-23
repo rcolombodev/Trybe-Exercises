@@ -1,1 +1,0 @@
-Aqui estão as pastas do bloco 2

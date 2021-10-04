@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
   <title>Banco de Imagens Gratis, Imagens Sem Direitos Autorais & Fotos Gratuitas · Pexels</title>
 </head>
+
 <body>
   <nav class="main-nav-bar">
     <a class="main-nav-bar__logo" href="https://www.pexels.com/pt-br/" title="As melhores fotos gratuitas">
-    <div class="main-nav-bar__logo__img">
-      <img src="image/pixels-icon.png" alt="pixels-logo">
-    </div>
+      <div class="main-nav-bar__logo__img">
+        <img src="image/pexels-icon.png">
+      </div>
 
-    <div class="main-nav-bar__logo__text">Pexels</div>
-    
+      <div class="main-nav-bar__logo__text">Pexels</div>
+
     </a>
 
     <ul class="main-nav-bar__sub-nav">
-      
+
       <li>Explorar</li>
       <li>Licença</li>
       <li>
@@ -32,7 +35,7 @@
         <i class="fas fa-user-circle"></i>
       </li>
       <li>
-        <button class="upload-button">Fazer Upload</button>
+        <button type="submit" class="upload-button">Fazer Upload</button>
       </li>
     </ul>
   </nav>
@@ -46,15 +49,35 @@
 
     </div>
     <section class="hero-content">
+      <h1 class="hero-title">O melhor banco de imagens e vídeos gratuitos compartilhados por criadores talentosos.</h1>
+      <div class="hero__search-container">
+        <div class="search-bar-container">
+          <input type="search" name="" class="hero-input-search" placeholder="Buscar fotos e vídeos gratuitos">
+          <button class="hero__search-button" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <ul class="hero__suggestions">Sugestões:
+          <li>React,</li>
+          <li>Redux,</li>
+          <li>SQL,</li>
+          <li>MongoDB,</li>
+          <li>SOLID</li>
+        </ul>
+
+      </div>
 
     </section>
   </header>
-  
-  <div class="header-footer"></div>
-  
-  <div class="main-content"></div>
+
+  <div class="main-content">
+    <div class="photos">
+      <div class="photos-column"></div>
+    </div>
+  </div>
 
 
-  
+  <script src="script.js"></script>
 </body>
+
 </html>

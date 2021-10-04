@@ -9,12 +9,12 @@
 }
 
 a:visited {
-  color: rgb(238,238,238)
+  color: rgb(255, 255, 255)
 }
 
 body {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: rgb(238, 238, 238);
+  color: rgb(255, 255, 255);
 }
 
 .main-nav-bar {
@@ -24,11 +24,15 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 0.8rem;
-  margin-top: 0.5rem;
+  padding: 0.8rem;
   font-weight: 700;
   font-size: 17px;  
-  z-index: 4;
+  z-index: 3;
+  transition: 0.4s;
+}
+
+.main-nav-bar-scroll {
+  background-color: rgb(37, 37, 37);
 }
 
 .main-nav-bar__logo {
@@ -37,33 +41,53 @@ body {
 }
 
 .main-nav-bar__logo__text {
-  margin-left: 0.6rem;
-  text-shadow: 1px 2px 2px black;
+  margin-left: 0.9rem;
 }
 
 .main-nav-bar__sub-nav {
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-right: 2.15rem;
 }
 
 .main-nav-bar__sub-nav li {
   margin-right: 2.15rem;
+  transition: 0.3s;
 }
 
 .main-nav-bar__logo__img img {
-  width: 46px;
-  border-radius: 10px;
+  width: 40px;
+  border-radius: 5px;
 }
 
 .background-opacity {
   width: 100%;
   height: 500px;
   background-color: rgb(34, 34, 34);
-  position: fixed;
+  position: absolute;
   z-index: 2;
-  opacity: 30%;
+  opacity: 50%;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 500px;
+  z-index: 1;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .hero-background img {
@@ -73,10 +97,148 @@ body {
   object-position: 20% 33%;
 }
 
-/* .upload-button {
-  margin-right: 0;
-} */
+.hero-content {
+  max-width: 650px;
+  width: 100%;
+  z-index: 4;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-input-search {
+  line-height: 22px;
+  margin-top:0;
+  margin-bottom: 0;
+  padding: 0.9rem 1.25rem;
+  font-weight: 400;
+  font-size: 17px;
+  width: 100%;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.945); 
+}
+
+.hero__suggestions {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.hero__suggestions li {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  
+  transition: 0.3s;
+}
+
+.hero__suggestions li:hover {
+  transition: 0.3s;
+  color:#cccccc;
+}
+
+.search-bar-container {
+  display: flex;
+}
+
+.hero__search-button {
+  display: flex;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 0 1rem;
+  align-items: center;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.945);
+}
+
+.fa-search {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.719);
+  padding: 22px 4px 22px 22px;
+  font-size: 19px;
+}
 
 .main-nav-bar__sub-nav li:last-child {
   margin-right: 0;
+}
+
+.fa-bell {
+  font-size: 20px;
+}
+
+.fa-user-circle {
+  font-size: 21px;
+}
+
+.upload-button {
+  background-color: #05a081;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 700;
+  padding: 11px 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload-button:hover {
+  transform:translateY(-1px);
+  transition: 0.2s;
+  box-shadow: 1px 1px 2px 4px rgba(255, 255, 255, 0.15);
+}
+
+
+.photos-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.photos-column img {
+  max-height: 40rem;
+  width: 20%; 
+  margin: 15px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.photos-column img:hover {
+  transition: 0.4s;
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 5px 5px rgba(44, 44, 44, 0.63);
+  cursor: pointer;
+}
+
+.video {
+  max-height: 27rem;
+  max-width: 35rem;
+  margin: 5px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.photos-column video:hover {
+  transition: 0.4s;
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 5px 5px rgba(44, 44, 44, 0.63);
+  cursor: pointer;
 }

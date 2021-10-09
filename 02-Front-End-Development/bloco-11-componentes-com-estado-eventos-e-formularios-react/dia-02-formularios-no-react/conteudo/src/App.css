@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303030;
+  color: black;
+}
+.header {
+  display:flex;
+  justify-content:center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.main-forms {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  margin-top: 50px;
+}
+
+.forms {
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  margin: auto;
+  max-width: 900px;
+  width: 400px;
+  gap: 5px;
+  font-family: 'Amita', cursive;
+  font-size: 30px;
+  line-height: 30px;
+  color:#303030
+}
+
+.fieldset-form {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin: auto;
+  width: 220px;
+  height: 600px;
+  gap: 30px;
+  padding: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.637);
+  border-style: double;
+  background-image: url(./paper-texture);
+  background-size: cover;
+  box-shadow: 6px 4px 5px rgba(0, 0, 0, 0.383);
+}

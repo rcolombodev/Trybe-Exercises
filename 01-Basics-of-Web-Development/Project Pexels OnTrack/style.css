@@ -204,21 +204,23 @@ body {
 
 
 .photos-column {
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid black;
+  flex-grow: 3;
 }
 
 .photos-column img {
-  max-height: 40rem;
-  width: 20%; 
-  margin: 15px;
+  display: block;
+  width: 20%;
+  height: 50vh;
   border-radius: 10px;
   transition: 0.4s;
+  margin: 10px;
 }
 
 .photos-column img:hover {
@@ -229,11 +231,11 @@ body {
 }
 
 .video {
-  max-height: 27rem;
-  max-width: 35rem;
-  margin: 5px;
+  max-height: auto;
+  max-width: 40rem;
   border-radius: 10px;
   transition: 0.4s;
+  margin: 10px;
 }
 
 .photos-column video:hover {

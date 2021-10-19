@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+  import React, { Component } from 'react';
+  import { Redirect } from 'react-router-dom';
 
-class Users extends Component {
-  render() {
-    return (
-      <div>
-        <h2>Users</h2>
-        <p> My awesome Users component </p>
-        <Link to="/">Voltar para Home</Link>
-      </div>
-    );
+  class StrictAccess extends Component {
+    render() {
+      const { username, password } = this.props.user;
+      if (!(username==='joao' && password === '1234')){
+        alert('Access denied');
+        return <Redirect to="/" />
+      }
+      return (
+        <p>Welcome joao!</p>
+      );
+    }
   }
-};
 
-export default Users;
+  export default StrictAccess;

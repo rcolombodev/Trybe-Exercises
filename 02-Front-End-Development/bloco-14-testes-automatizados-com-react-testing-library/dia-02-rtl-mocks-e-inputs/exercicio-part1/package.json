@@ -1,0 +1,16 @@
+{
+  "name": "exercicio-part1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service.js",
+  "dependencies": {
+    "jest": "^27.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

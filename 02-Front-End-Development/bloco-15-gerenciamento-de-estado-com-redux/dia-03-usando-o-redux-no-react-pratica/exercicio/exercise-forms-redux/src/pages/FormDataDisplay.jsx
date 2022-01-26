@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 
 class FormDataDisplay extends Component {
   render() {
-    const {personal: {nome, email, cpf, endereco, cidade, estado}} = this.props;
-    const {professional: { curriculo, cargo, descricao }}= this.props;
+    // eslint-disable-next-line react/prop-types
+    const { personal: { nome, email, cpf, endereco, cidade, estado } } = this.props;
+    // eslint-disable-next-line react/prop-types
+    const { professional: { curriculo, cargo, descricao } } = this.props;
     return (
       <div>
         <h2>Dados enviados</h2>

@@ -20,4 +20,5 @@ INSERT INTO actor(first_name, last_name)
 INSERT INTO category(name)
   VALUES ('Anime'), ('Documentario'), ('Policial');
 
-INSERT INTO sakila.store(manager_staff_id, address_id) VALUES(3,3);
+INSERT INTO sakila.store (manager_staff_id, address_id)
+VALUES (3, 3);

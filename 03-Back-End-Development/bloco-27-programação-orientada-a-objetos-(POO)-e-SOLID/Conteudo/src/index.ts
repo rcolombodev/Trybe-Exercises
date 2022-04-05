@@ -32,30 +32,53 @@ Maria: zzzzzzz
 João: zzzzzzz
 */
 class Tv {
-  brand: string;
-  size: number;
-  resolution: number;
-  connections: number;
-  connectedTo: string;
+  private _brand: string;
+  private _size: number;
+  private _resolution: number;
+  private _connections: number;
+  private _connectedTo: string;
 
   constructor(b: string, s: number, r: number, c: number, ct: string) {
     console.log(`Creating tv ${b}`);
-    this.brand = b;
-    this.size = s;
-    this.resolution = r;
-    this.connections = c;
-    this.connectedTo = ct;
+    this._brand = b;
+    this._size = s;
+    this._resolution = r;
+    this._connections = c;
+    this._connectedTo = ct;
   }
 
-  turnOn() {
-    console.log(`Turning on ${this.brand}, ${this.size} inches, ${this.resolution} dpi, ${this.connections} connections, connected to ${this.connectedTo}`);
+  get brand(): string {
+    return this._brand;
+  }
+
+  get size(): number {
+    return this._size;
+  }
+
+  get resolution(): number {
+    return this._resolution;
+  }
+
+  get connections(): number {
+    return this._connections;
+  }
+
+  get connectedTo(): string {
+    return this._connectedTo;
+  }
+
+  set connectedTo(value: string) {
+    this._connectedTo = value;
   }
 }
 
 const t1 = new Tv('LG', 55, 1080, 2, 'HDMI');
 const t2 = new Tv('Samsung', 65, 2160, 4, 'HDMI');
-console.log(t1.brand, t1.size, t1.resolution, t1.connections, t1.connectedTo);
-console.log(t2.brand, t2.size, t2.resolution, t2.connections, t2.connectedTo);
 
-t1.turnOn();
-t2.turnOn();
+// console.log(`Turning on ${this._brand}, ${this._size} inches, ${this._resolution} dpi, ${this._connections} connections, connected to ${this._connectedTo}`);
+
+t1.connectedTo = 'DVI';
+
+console.log(`Turning on ${t1.brand}, ${t1.size} inches, ${t1.resolution} dpi, ${t1.connections} connections, connected to ${t1.connectedTo}`);
+
+console.log(`Turning on ${t2.brand}, ${t2.size} inches, ${t2.resolution} dpi, ${t2.connections} connections, connected to ${t2.connectedTo}`);

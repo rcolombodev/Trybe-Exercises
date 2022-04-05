@@ -1,44 +1,11 @@
-class Person {
-  name: string;
-  height: number;
-  weight: number;
-
-  constructor(n: string, h: number, w: number) {
-    console.log(`Creating person ${n}`);
-    this.name = n;
-    this.height = h;
-    this.weight = w;
-  }
-
-  sleep() {
-    console.log(`${this.name}: zzzzzzz`);
-  }
-}
-
-const p1 = new Person('Maria', 171, 58); 
-const p2 = new Person('João', 175, 66);
-console.log(p1.name, p1.height, p1.weight);
-console.log(p2.name, p2.height, p2.weight);
-p1.sleep();
-p2.sleep();
-
-/*
-Saída:
-Creating person Maria
-Creating person João
-Maria 171 58
-João 175 66
-Maria: zzzzzzz
-João: zzzzzzz
-*/
 class Tv {
   private _brand: string;
   private _size: number;
   private _resolution: number;
-  private _connections: number;
+  private _connections: string[];
   private _connectedTo: string;
 
-  constructor(b: string, s: number, r: number, c: number, ct: string) {
+  constructor(b: string, s: number, r: number, c: string[], ct: string) {
     console.log(`Creating tv ${b}`);
     this._brand = b;
     this._size = s;
@@ -59,7 +26,7 @@ class Tv {
     return this._resolution;
   }
 
-  get connections(): number {
+  get connections(): string[] {
     return this._connections;
   }
 
@@ -68,17 +35,21 @@ class Tv {
   }
 
   set connectedTo(value: string) {
-    this._connectedTo = value;
+    if(this._connections.includes(value)) {
+      this._connectedTo = value;
+    } else {
+      console.log(`${value} 'Sorry, connection unavailable!'`);
+    }
   }
 }
 
-const t1 = new Tv('LG', 55, 1080, 2, 'HDMI');
-const t2 = new Tv('Samsung', 65, 2160, 4, 'HDMI');
+const t1 = new Tv('LG', 55, 1080, ['HDMI', 'DVI', 'VGA'], 'HDMI');
+const t2 = new Tv('Samsung', 65, 2160, ['HDMI', 'DVI', 'VGA'], 'HDMI');
 
 // console.log(`Turning on ${this._brand}, ${this._size} inches, ${this._resolution} dpi, ${this._connections} connections, connected to ${this._connectedTo}`);
 
 t1.connectedTo = 'DVI';
 
-console.log(`Turning on ${t1.brand}, ${t1.size} inches, ${t1.resolution} dpi, ${t1.connections} connections, connected to ${t1.connectedTo}`);
+console.log(`Turning on ${t1.brand}, ${t1.size} inches, ${t1.resolution} dpi, ${t1.connections} \navailable connections, connected to ${t1.connectedTo}`);
 
-console.log(`Turning on ${t2.brand}, ${t2.size} inches, ${t2.resolution} dpi, ${t2.connections} connections, connected to ${t2.connectedTo}`);
+console.log(`Turning on ${t2.brand}, ${t2.size} inches, ${t2.resolution} dpi, ${t2.connections} \navailable connections, connected to ${t2.connectedTo}`);
